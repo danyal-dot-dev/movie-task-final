@@ -35,6 +35,7 @@ const useStyles = createStyles((theme) => styles(theme));
 
 export default function ViewMovie() {
   const movie = useLocation().state?.movie;
+  const rank = useLocation().state?.index + 1
   const theme = useMantineTheme();
   const { classes } = useStyles();
   const navigate = useNavigate()
@@ -127,6 +128,10 @@ export default function ViewMovie() {
                       {genre}
                     </Badge>
                   ))}
+                </Group>
+                <Group spacing={4} align="center">
+                  <Text fw={600} fz={18}>Rank: </Text>
+                  <Text fz={18}>{rank}</Text>
                 </Group>
               </Stack>
             </Group>
