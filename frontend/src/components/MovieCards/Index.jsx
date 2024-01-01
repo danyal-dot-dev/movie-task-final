@@ -13,10 +13,10 @@ export default function MovieCards({ movies, heading, setCurrentPage, getMovies 
         <Text className={classes.cardsHeading}>{heading}</Text>
       </Group>
       <Grid>
-        {movies.map((movie) => {
+        {movies.map((movie, index) => {
           return (
             <Grid.Col xs={6} sm={4} lg={3} key={movie?._id}>
-              <MovieCard movie={movie} />
+              <MovieCard movie={movie} index={index} />
             </Grid.Col>
           );
         })}
