@@ -4,7 +4,7 @@ const styles = (theme) => {
       backgroundSize: "cover",
       minHeight: "91.8vh",
       backgroundImage:
-        "url(https://www.topgear.com/sites/default/files/2022/07/6_0.jpg)",
+        "url(https://www.vintagemovieposters.co.uk/wp-content/uploads/2023/03/IMG_1887-scaled.jpeg)",
     },
 
     form: {
