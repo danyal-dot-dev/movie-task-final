@@ -5,11 +5,11 @@ import { useNavigate } from "react-router-dom";
 import { genreColors } from "../../helpers/data";
 const useStyles = createStyles((theme) => styles(theme))
 
-export default function MovieCard({movie}) {
+export default function MovieCard({movie, index}) {
     const {classes} = useStyles()
     const navigate = useNavigate()
     return (
-        <Card shadow="sm" padding="xs" radius="md" withBorder className={classes.card} onClick={() => navigate(`/movie/${movie?._id}`, {state: {movie}})}>
+        <Card shadow="sm" padding="xs" radius="md" withBorder className={classes.card} onClick={() => navigate(`/movie/${movie?._id}`, {state: {movie, index: index}})}>
             {/* Image section of card without any padding */}
             <Card.Section>
                 <Image height={300} src={movie?.images[0]} alt={movie?.title} />
