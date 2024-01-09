@@ -79,8 +79,7 @@ JWT_SECRET='movie@hub'<br>
 │   └── helpers   #contains various helpers like axios.
 │   ├── pages   #contains entire web pages of the application compromising of ui components.
 │   └── routes   #contains frontend routes for the application.
-│   └── utilities   #contains various utilites like db, jwt, validators.
-│   └── App.js   #Runner file for backend.
+│   └── App.js   #Runner file for frontend.
 ├── docker-compose.yml   #for starting containers
 └── .gitignore
 ```
