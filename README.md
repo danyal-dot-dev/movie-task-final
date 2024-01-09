@@ -61,3 +61,26 @@ JWT_SECRET='movie@hub'<br>
 
 ## Directory Structure
 
+```bash
+├── backend      #contains the backend api code for the application
+│   ├── __tests__   #contains all the test cases for the backend api.
+│   ├── controllers   #contains all the controllers for the application which are responsible for dealing with web requests and contain business logic for the application.
+│   ├── middleware   #contains various middlewares used by the backend.  
+│   ├── models   #contains database models which are used for interacting with collections.
+│   ├── routes   #contains all the api endpoints.
+│   └── services   #contains database services which are responsible for interacting with the database.
+│   └── utilities   #contains various utilites like db, jwt, validators.
+│   └── Dockerfile   #Dockerfile for building backend image.
+│   └── index.js   #Runner file for backend.
+├── frontend/src      #contains the frontend code for the application
+│   ├── __tests__   #contains all the test cases for the ui.
+│   ├── components   #contains resuable/individual ui components for the application.
+│   ├── contexts   #contains context api providers of the application.  
+│   └── helpers   #contains various helpers like axios.
+│   ├── pages   #contains entire web pages of the application compromising of ui components.
+│   └── routes   #contains frontend routes for the application.
+│   └── utilities   #contains various utilites like db, jwt, validators.
+│   └── App.js   #Runner file for backend.
+├── docker-compose.yml   #for starting containers
+└── .gitignore
+```
