@@ -3,7 +3,7 @@ const styles = (theme) => ({
     backgroundSize: "cover",
     minHeight: "100vh",
     backgroundImage:
-      "url(https://carwow-uk-wp-3.imgix.net/18015-MC20BluInfinito-scaled-e1666008987698.jpg)",
+      "url(https://www.vintagemovieposters.co.uk/wp-content/uploads/2023/03/IMG_1887-scaled.jpeg)",
   },
 
   form: {
