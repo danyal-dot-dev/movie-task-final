@@ -68,18 +68,17 @@ JWT_SECRET='movie@hub'<br>
 │   ├── middleware   #contains various middlewares used by the backend.  
 │   ├── models   #contains database models which are used for interacting with collections.
 │   ├── routes   #contains all the api endpoints.
-│   └── services   #contains database services which are responsible for interacting with the database.
-│   └── utilities   #contains various utilites like db, jwt, validators.
+│   └── services   #contains database services (respository) which are responsible for interacting with the database.
+│   └── utilities   #contains various utilites like db connector, jwt, validators.
 │   └── Dockerfile   #Dockerfile for building backend image.
 │   └── index.js   #Runner file for backend.
 ├── frontend/src      #contains the frontend code for the application
-│   ├── __tests__   #contains all the test cases for the ui.
-│   ├── components   #contains resuable/individual ui components for the application.
+│   ├── __tests__   #contains all the test cases for the frontend.
+│   ├── components   #contains resuable/individual ui components that are used in pages.
 │   ├── contexts   #contains context api providers of the application.  
 │   └── helpers   #contains various helpers like axios.
 │   ├── pages   #contains entire web pages of the application compromising of ui components.
 │   └── routes   #contains frontend routes for the application.
-│   └── App.js   #Runner file for frontend.
 ├── docker-compose.yml   #for starting containers
 └── .gitignore
 ```
